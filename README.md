@@ -1,2 +1,3 @@
-# gcp-admin-activity-logs
-Reference implementation of Admin activity logs design
+# GCP Admin Activity Logs
+
+Reference implementation of Admin activity logs.

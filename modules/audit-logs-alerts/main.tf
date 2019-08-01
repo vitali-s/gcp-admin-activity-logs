@@ -2,7 +2,7 @@ resource "google_monitoring_notification_channel" "notification_channel_email" {
   display_name = "Email Notification Channel"
   type = "email"
   labels = {
-    email_address = "fake_email@blahblah.com"
+    email_address = var.notification_email_address
   }
 }
 
@@ -39,4 +39,8 @@ resource "google_monitoring_alert_policy" "alert_policy_iam_owner_change" {
       }
     }
   }
+
+  notification_channels = [
+    "${google_monitoring_notification_channel.notification_channel_email.name}",
+  ]
 }

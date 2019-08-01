@@ -12,4 +12,6 @@ module "audit-logs-analysis" {
 
 module "audit-logs-alerts" {
   source = "./modules/audit-logs-alerts"
+
+  notification_email_address = "email@email.com"
 }

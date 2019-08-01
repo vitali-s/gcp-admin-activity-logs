@@ -19,5 +19,5 @@ variable "resource_type" {
 
 variable "dataset_name" {
   description = "The name of BigQuery dataset"
-  default     = "audit-logs-analysis"
+  default     = "audit_logs_analysis"
 }

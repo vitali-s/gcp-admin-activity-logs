@@ -9,3 +9,7 @@ module "audit-logs-analysis" {
 
   project = var.project
 }
+
+module "audit-logs-alerts" {
+  source = "./modules/audit-logs-alerts"
+}

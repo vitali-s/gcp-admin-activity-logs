@@ -1,3 +1,11 @@
+resource "google_monitoring_notification_channel" "notification_channel_email" {
+  display_name = "Email Notification Channel"
+  type = "email"
+  labels = {
+    email_address = "fake_email@blahblah.com"
+  }
+}
+
 resource "google_logging_metric" "metric_iam_owner_change" {
   name = "iam/owner_change"
 
